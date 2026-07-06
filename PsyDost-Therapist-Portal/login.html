@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - PsyDost Therapist Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/auth.css" rel="stylesheet">
+</head>
+<body>
+  <div class="auth-page">
+    <div class="auth-left">
+      <div class="auth-brand">
+        <div class="logo"><i class="fas fa-brain"></i></div>
+        <h1>PsyDost</h1>
+        <p>Empowering mental health professionals with a secure, intuitive platform for telemedicine consultations.</p>
+        <ul class="auth-features">
+          <li><i class="fas fa-video"></i> HD Video Consultations</li>
+          <li><i class="fas fa-calendar-check"></i> Smart Appointment Management</li>
+          <li><i class="fas fa-chart-line"></i> Real-time Analytics & Earnings</li>
+          <li><i class="fas fa-shield-alt"></i> HIPAA Compliant & Secure</li>
+        </ul>
+      </div>
+    </div>
+    <div class="auth-right">
+      <div class="auth-form-container">
+        <h2>Welcome Back</h2>
+        <p class="subtitle">Sign in to your therapist portal account</p>
+        <form class="auth-form" data-redirect="pages/dashboard.html" data-success="Login successful! Redirecting...">
+          <div class="form-group">
+            <label class="form-label-custom" for="email">Email Address</label>
+            <input type="email" id="email" class="form-control-custom" placeholder="dr.priya@psydost.com" value="dr.priya@psydost.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label-custom" for="password">Password</label>
+            <div class="input-group-custom">
+              <input type="password" id="password" class="form-control-custom" placeholder="Enter your password" value="SecurePass123!" required>
+              <button type="button" class="toggle-password"><i class="fas fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="form-options">
+            <label class="remember-me"><input type="checkbox" checked> Remember me</label>
+            <a href="forgot-password.html" class="forgot-link">Forgot Password?</a>
+          </div>
+          <button type="submit" class="auth-submit"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+        </form>
+        <p class="auth-footer-text">Need help? <a href="#">Contact Support</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="js/auth.js"></script>
+</body>
+</html>

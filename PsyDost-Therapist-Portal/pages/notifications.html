@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications - PsyDost</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+</head>
+<body data-page="notifications.html">
+  <div class="sidebar-overlay" style="position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:1035;opacity:0;pointer-events:none;transition:opacity .3s;"></div>
+  <div class="app-wrapper">
+    <div id="app-sidebar"></div>
+    <div class="main-content">
+      <div id="app-header"></div>
+      <div class="page-content">
+        <div class="breadcrumb-nav"> <a href="dashboard.html">Home</a> <i class="fas fa-chevron-right" style="font-size:0.6rem;"></i> <span class="current">Notifications</span> </div>
+        <div class="page-header"><div><h2>Notifications</h2><p>3 unread notifications</p></div>
+        <button class="btn-outline-custom" onclick="PsyDost.showToast('All marked as read','success')"><i class="fas fa-check-double"></i> Mark All Read</button></div>
+        <div class="nav-tabs-custom mb-4"><button class="nav-tab active" data-tab="all-notif">All</button><button class="nav-tab" data-tab="appt-notif">Appointments</button><button class="nav-tab" data-tab="pay-notif">Payments</button><button class="nav-tab" data-tab="sys-notif">System</button></div>
+        <div class="tab-pane" id="all-notif"><div class="card"><div class="card-body p-0">
+          <a href="pending-requests.html" class="notification-item unread"><div class="notification-icon appointment"><i class="fas fa-calendar"></i></div><div><h6 style="margin:0;font-size:0.9rem;">New appointment request</h6><p style="margin:0;font-size:0.8rem;color:var(--gray-500);">Neha Desai requested a session on Jul 6 at 4:00 PM</p><small class="text-muted">10 minutes ago</small></div></a>
+          <a href="patient-profile.html" class="notification-item unread"><div class="notification-icon message"><i class="fas fa-comment"></i></div><div><h6 style="margin:0;font-size:0.9rem;">Patient message</h6><p style="margin:0;font-size:0.8rem;color:var(--gray-500);">Rahul Mehta sent a follow-up question about breathing exercises</p><small class="text-muted">25 minutes ago</small></div></a>
+          <div class="notification-item unread"><div class="notification-icon payment"><i class="fas fa-rupee-sign"></i></div><div><h6 style="margin:0;font-size:0.9rem;">Payment received</h6><p style="margin:0;font-size:0.8rem;color:var(--gray-500);">₹1,500 received for session with Ananya Krishnan</p><small class="text-muted">1 hour ago</small></div></div>
+          <a href="appointment-details.html" class="notification-item"><div class="notification-icon appointment"><i class="fas fa-bell"></i></div><div><h6 style="margin:0;font-size:0.9rem;">Appointment reminder</h6><p style="margin:0;font-size:0.8rem;color:var(--gray-500);">Upcoming session with Sneha Patel at 12:00 PM today</p><small class="text-muted">2 hours ago</small></div></a>
+          <a href="payout-history.html" class="notification-item"><div class="notification-icon payment"><i class="fas fa-wallet"></i></div><div><h6 style="margin:0;font-size:0.9rem;">Payout processed</h6><p style="margin:0;font-size:0.8rem;color:var(--gray-500);">₹28,450 deposited to HDFC Bank ****4521</p><small class="text-muted">Jun 24, 2026</small></div></a>
+          <div class="notification-item"><div class="notification-icon system"><i class="fas fa-cog"></i></div><div><h6 style="margin:0;font-size:0.9rem;">Platform update</h6><p style="margin:0;font-size:0.8rem;color:var(--gray-500);">New video consultation features available — check settings</p><small class="text-muted">Jun 20, 2026</small></div></div>
+        </div></div></div>
+        <div class="tab-pane" id="appt-notif" style="display:none;"><div class="card"><div class="card-body p-0"><a href="pending-requests.html" class="notification-item unread"><div class="notification-icon appointment"><i class="fas fa-calendar"></i></div><div><h6 style="margin:0;">New appointment request from Neha Desai</h6><small class="text-muted">10 min ago</small></div></a></div></div></div>
+        <div class="tab-pane" id="pay-notif" style="display:none;"><div class="card"><div class="card-body p-0"><div class="notification-item"><div class="notification-icon payment"><i class="fas fa-rupee-sign"></i></div><div><h6 style="margin:0;">Payment received — ₹1,500</h6><small class="text-muted">1 hour ago</small></div></div></div></div></div>
+        <div class="tab-pane" id="sys-notif" style="display:none;"><div class="card"><div class="card-body p-0"><div class="notification-item"><div class="notification-icon system"><i class="fas fa-cog"></i></div><div><h6 style="margin:0;">Platform update available</h6><small class="text-muted">Jun 20, 2026</small></div></div></div></div></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="../js/layout.js"></script>
+  <script src="../js/main.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - PsyDost</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+</head>
+<body data-page="profile-view.html">
+  <div class="sidebar-overlay" style="position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:1035;opacity:0;pointer-events:none;transition:opacity .3s;"></div>
+  <div class="app-wrapper">
+    <div id="app-sidebar"></div>
+    <div class="main-content">
+      <div id="app-header"></div>
+      <div class="page-content">
+        <div class="breadcrumb-nav"> <a href="dashboard.html">Home</a> <i class="fas fa-chevron-right" style="font-size:0.6rem;"></i> <span class="current">Profile</span> </div>
+        
+    <div class="profile-header">
+      <img src="https://ui-avatars.com/api/?name=Priya+Sharma&size=96&background=ffffff&color=2563eb" class="avatar-xl" alt="Dr. Priya">
+      <div><h3>Dr. Priya Sharma</h3><p>Clinical Psychologist · M.Phil Clinical Psychology</p><span class="badge-status confirmed"><i class="fas fa-check-circle"></i> Verified</span></div>
+      <div class="profile-stats"><div class="profile-stat"><h4>248</h4><small>Patients</small></div><div class="profile-stat"><h4>1,420</h4><small>Sessions</small></div><div class="profile-stat"><h4>4.85</h4><small>Rating</small></div><div class="profile-stat"><h4>8 yrs</h4><small>Experience</small></div></div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center mb-4"><h4 class="mb-0">Professional Information</h4><a href="profile-edit.html" class="btn-primary-custom"><i class="fas fa-edit"></i> Edit Profile</a></div>
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="card mb-4"><div class="card-header"><h5>Personal Details</h5></div><div class="card-body"><div class="info-grid">
+          <div class="info-item"><label>Full Name</label><span>Dr. Priya Sharma</span></div>
+          <div class="info-item"><label>Email</label><span>dr.priya@psydost.com</span></div>
+          <div class="info-item"><label>Phone</label><span>+91 98765 43210</span></div>
+          <div class="info-item"><label>Date of Birth</label><span>March 15, 1988</span></div>
+          <div class="info-item"><label>Gender</label><span>Female</span></div>
+          <div class="info-item"><label>Location</label><span>Mumbai, Maharashtra</span></div>
+        </div></div></div>
+        <div class="card mb-4"><div class="card-header"><h5>Qualifications & Certifications</h5></div><div class="card-body">
+          <div class="timeline">
+            <div class="timeline-item"><h6>M.Phil Clinical Psychology</h6><p>NIMHANS, Bangalore · 2016</p><span class="time">Verified ✓</span></div>
+            <div class="timeline-item"><h6>M.A. Psychology</h6><p>Delhi University · 2014</span></div>
+            <div class="timeline-item"><h6>RCI License</h6><p>Registration No: A12345 · Valid till 2028</p></div>
+            <div class="timeline-item"><h6>Cognitive Behavioral Therapy Certification</h6><p>Beck Institute · 2018</p></div>
+          </div>
+        </div></div>
+        <div class="card"><div class="card-header"><h5>Specializations & Languages</h5></div><div class="card-body">
+          <p class="mb-2"><strong>Specializations:</strong></p>
+          <div class="d-flex flex-wrap gap-2 mb-3"><span class="badge-status confirmed">Anxiety Disorders</span><span class="badge-status confirmed">Depression</span><span class="badge-status confirmed">PTSD</span><span class="badge-status confirmed">Stress Management</span><span class="badge-status confirmed">Relationship Counseling</span></div>
+          <p class="mb-2"><strong>Languages:</strong> English, Hindi, Marathi</p>
+          <p class="mb-0"><strong>Experience:</strong> 8+ years in clinical practice</p>
+        </div></div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card mb-4"><div class="card-header"><h5>Consultation Fees</h5></div><div class="card-body">
+          <div class="info-item"><label>Initial Session</label><span>₹2,000 / 60 min</span></div>
+          <div class="info-item"><label>Follow-up Session</label><span>₹1,500 / 45 min</span></div>
+          <div class="info-item"><label>Couples Therapy</label><span>₹3,000 / 75 min</span></div>
+        </div></div>
+        <div class="card mb-4"><div class="card-header"><h5>Working Hours</h5><a href="availability.html">Manage</a></div><div class="card-body">
+          <p><strong>Mon - Fri:</strong> 9:00 AM - 6:00 PM</p>
+          <p><strong>Saturday:</strong> 10:00 AM - 2:00 PM</p>
+          <p class="mb-0"><strong>Sunday:</strong> Off</p>
+        </div></div>
+        <div class="card"><div class="card-header"><h5>Bank & Payout</h5><a href="bank-details.html">Edit</a></div><div class="card-body">
+          <div class="info-item"><label>Bank</label><span>HDFC Bank ****4521</span></div>
+          <div class="info-item"><label>Payout Cycle</label><span>Weekly (Every Monday)</span></div>
+          <div class="info-item"><label>Commission</label><span>85% of consultation fee</span></div>
+        </div></div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="../js/layout.js"></script>
+  <script src="../js/main.js"></script>
+  
+</body>
+</html>

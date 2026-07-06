@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - PsyDost Therapist Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+</head>
+<body data-page="dashboard.html">
+  <div class="sidebar-overlay" style="position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:1035;opacity:0;pointer-events:none;transition:opacity .3s;"></div>
+  <div class="app-wrapper">
+    <div id="app-sidebar"></div>
+    <div class="main-content">
+      <div id="app-header"></div>
+      <div class="page-content">
+        <div class="breadcrumb-nav"><a href="dashboard.html">Home</a> <i class="fas fa-chevron-right" style="font-size:0.6rem;"></i> <span class="current">Dashboard</span></div>
+        <div class="page-header">
+          <div>
+            <h2>Good Morning, Dr. Priya! 👋</h2>
+            <p>Monday, July 6, 2026 · You have 5 appointments today</p>
+          </div>
+          <div class="d-flex gap-2">
+            <a href="appointments-list.html" class="btn-outline-custom"><i class="fas fa-calendar"></i> View Schedule</a>
+            <a href="consultation-waiting.html" class="btn-primary-custom"><i class="fas fa-video"></i> Start Consultation</a>
+          </div>
+        </div>
+
+        <!-- KPI Cards -->
+        <div class="kpi-grid">
+          <div class="kpi-card"><div class="kpi-icon blue"><i class="fas fa-calendar-day"></i></div><span class="kpi-trend up"><i class="fas fa-arrow-up"></i> 2</span><h3>5</h3><p>Today's Appointments</p></div>
+          <div class="kpi-card"><div class="kpi-icon green"><i class="fas fa-clock"></i></div><span class="kpi-trend up"><i class="fas fa-arrow-up"></i> 3</span><h3>12</h3><p>Upcoming Appointments</p></div>
+          <div class="kpi-card"><div class="kpi-icon orange"><i class="fas fa-hourglass-half"></i></div><h3>5</h3><p>Pending Requests</p></div>
+          <div class="kpi-card"><div class="kpi-icon purple"><i class="fas fa-video"></i></div><h3>1</h3><p>Active Consultations</p></div>
+          <div class="kpi-card"><div class="kpi-icon cyan"><i class="fas fa-users"></i></div><span class="kpi-trend up"><i class="fas fa-arrow-up"></i> 8%</span><h3>248</h3><p>Total Patients</p></div>
+          <div class="kpi-card"><div class="kpi-icon green"><i class="fas fa-rupee-sign"></i></div><span class="kpi-trend up"><i class="fas fa-arrow-up"></i> 12%</span><h3>₹1,24,500</h3><p>Monthly Earnings</p></div>
+          <div class="kpi-card"><div class="kpi-icon blue"><i class="fas fa-percentage"></i></div><h3>85%</h3><p>Your Commission</p></div>
+          <div class="kpi-card"><div class="kpi-icon orange"><i class="fas fa-wallet"></i></div><h3>₹18,675</h3><p>Pending Payout</p></div>
+          <div class="kpi-card"><div class="kpi-icon green"><i class="fas fa-smile"></i></div><h3>96%</h3><p>Patient Satisfaction</p></div>
+          <div class="kpi-card"><div class="kpi-icon purple"><i class="fas fa-star"></i></div><h3>4.85</h3><p>Average Rating</p></div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="card mb-4">
+          <div class="card-header"><h5><i class="fas fa-bolt text-primary"></i> Quick Actions</h5></div>
+          <div class="card-body">
+            <div class="quick-actions">
+              <a href="consultation-waiting.html" class="quick-action-btn"><i class="fas fa-video"></i><span>Join Session</span></a>
+              <a href="pending-requests.html" class="quick-action-btn"><i class="fas fa-inbox"></i><span>Pending Requests</span></a>
+              <a href="appointments-calendar.html" class="quick-action-btn"><i class="fas fa-calendar-plus"></i><span>Manage Schedule</span></a>
+              <a href="patients-list.html" class="quick-action-btn"><i class="fas fa-user-plus"></i><span>View Patients</span></a>
+              <a href="profile-edit.html" class="quick-action-btn"><i class="fas fa-edit"></i><span>Edit Profile</span></a>
+              <a href="earnings-dashboard.html" class="quick-action-btn"><i class="fas fa-file-invoice"></i><span>View Earnings</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+          <!-- Daily Schedule -->
+          <div class="col-lg-8">
+            <div class="card h-100">
+              <div class="card-header">
+                <h5><i class="fas fa-calendar-day text-primary"></i> Today's Schedule</h5>
+                <a href="appointments-today.html" class="btn-outline-custom btn-sm-custom">View All</a>
+              </div>
+              <div class="card-body p-0">
+                <table class="table-custom">
+                  <thead><tr><th>Time</th><th>Patient</th><th>Type</th><th>Status</th><th>Action</th></tr></thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>09:00 AM</strong></td>
+                      <td><div class="patient-cell"><div class="avatar avatar-sm">AK</div><div class="info"><h6>Ananya Krishnan</h6><small>Anxiety Disorder</small></div></div></td>
+                      <td>Video Call</td>
+                      <td><span class="badge-status completed">Completed</span></td>
+                      <td><a href="consultation-details.html" class="btn-outline-custom btn-sm-custom">View</a></td>
+                    </tr>
+                    <tr>
+                      <td><strong>10:30 AM</strong></td>
+                      <td><div class="patient-cell"><div class="avatar avatar-sm">RM</div><div class="info"><h6>Rahul Mehta</h6><small>Depression</small></div></div></td>
+                      <td>Video Call</td>
+                      <td><span class="badge-status in-progress">In Progress</span></td>
+                      <td><a href="consultation-live.html" class="btn-primary-custom btn-sm-custom"><i class="fas fa-video"></i> Join</a></td>
+                    </tr>
+                    <tr>
+                      <td><strong>12:00 PM</strong></td>
+                      <td><div class="patient-cell"><div class="avatar avatar-sm">SP</div><div class="info"><h6>Sneha Patel</h6><small>Stress Management</small></div></div></td>
+                      <td>Video Call</td>
+                      <td><span class="badge-status confirmed">Confirmed</span></td>
+                      <td><a href="appointment-details.html?id=3" class="btn-outline-custom btn-sm-custom">Details</a></td>
+                    </tr>
+                    <tr>
+                      <td><strong>02:30 PM</strong></td>
+                      <td><div class="patient-cell"><div class="avatar avatar-sm">VJ</div><div class="info"><h6>Vikram Joshi</h6><small>PTSD</small></div></div></td>
+                      <td>Follow-up</td>
+                      <td><span class="badge-status confirmed">Confirmed</span></td>
+                      <td><a href="appointment-details.html?id=4" class="btn-outline-custom btn-sm-custom">Details</a></td>
+                    </tr>
+                    <tr>
+                      <td><strong>04:00 PM</strong></td>
+                      <td><div class="patient-cell"><div class="avatar avatar-sm">ND</div><div class="info"><h6>Neha Desai</h6><small>Relationship Issues</small></div></div></td>
+                      <td>Video Call</td>
+                      <td><span class="badge-status pending">Pending</span></td>
+                      <td><a href="pending-requests.html" class="btn-warning-custom btn-sm-custom">Review</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Calendar Widget -->
+          <div class="col-lg-4">
+            <div class="card h-100">
+              <div class="card-header"><h5><i class="fas fa-calendar text-primary"></i> July 2026</h5></div>
+              <div class="card-body">
+                <div class="calendar-grid">
+                  <div class="calendar-day-header">Su</div><div class="calendar-day-header">Mo</div><div class="calendar-day-header">Tu</div><div class="calendar-day-header">We</div><div class="calendar-day-header">Th</div><div class="calendar-day-header">Fr</div><div class="calendar-day-header">Sa</div>
+                  <div class="calendar-day other-month">28</div><div class="calendar-day other-month">29</div><div class="calendar-day other-month">30</div><div class="calendar-day">1</div><div class="calendar-day has-event">2</div><div class="calendar-day">3</div><div class="calendar-day">4</div>
+                  <div class="calendar-day">5</div><div class="calendar-day today has-event">6</div><div class="calendar-day has-event">7</div><div class="calendar-day">8</div><div class="calendar-day has-event">9</div><div class="calendar-day">10</div><div class="calendar-day">11</div>
+                  <div class="calendar-day">12</div><div class="calendar-day has-event">13</div><div class="calendar-day">14</div><div class="calendar-day has-event">15</div><div class="calendar-day">16</div><div class="calendar-day">17</div><div class="calendar-day has-event">18</div>
+                  <div class="calendar-day">19</div><div class="calendar-day">20</div><div class="calendar-day has-event">21</div><div class="calendar-day">22</div><div class="calendar-day">23</div><div class="calendar-day">24</div><div class="calendar-day">25</div>
+                  <div class="calendar-day has-event">26</div><div class="calendar-day">27</div><div class="calendar-day">28</div><div class="calendar-day has-event">29</div><div class="calendar-day">30</div><div class="calendar-day">31</div><div class="calendar-day other-month">1</div>
+                </div>
+                <div class="mt-3"><small class="text-muted"><i class="fas fa-circle text-primary" style="font-size:0.5rem;"></i> Days with appointments</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Charts Row 1 -->
+        <div class="row g-4 mb-4">
+          <div class="col-lg-6">
+            <div class="card"><div class="card-header"><h5>Monthly Earnings</h5></div><div class="card-body"><div class="chart-container"><canvas id="monthlyEarningsChart"></canvas></div></div></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card"><div class="card-header"><h5>Consultation Trends (This Week)</h5></div><div class="card-body"><div class="chart-container"><canvas id="consultationTrendsChart"></canvas></div></div></div>
+          </div>
+        </div>
+
+        <!-- Charts Row 2 -->
+        <div class="row g-4 mb-4">
+          <div class="col-lg-4">
+            <div class="card"><div class="card-header"><h5>Patient Growth</h5></div><div class="card-body"><div class="chart-container"><canvas id="patientGrowthChart"></canvas></div></div></div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card"><div class="card-header"><h5>Appointment Status</h5></div><div class="card-body"><div class="chart-container"><canvas id="appointmentStatusChart"></canvas></div></div></div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card"><div class="card-header"><h5>Patient Satisfaction</h5></div><div class="card-body"><div class="chart-container"><canvas id="satisfactionChart"></canvas></div></div></div>
+          </div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header"><h5>Recent Patients</h5><a href="patients-list.html">View All</a></div>
+              <div class="card-body p-0">
+                <div class="notification-item"><div class="avatar avatar-sm">AK</div><div><h6 style="margin:0;font-size:0.875rem;">Ananya Krishnan</h6><small class="text-muted">Last visit: Today</small></div></div>
+                <div class="notification-item"><div class="avatar avatar-sm">RM</div><div><h6 style="margin:0;font-size:0.875rem;">Rahul Mehta</h6><small class="text-muted">Last visit: Today</small></div></div>
+                <div class="notification-item"><div class="avatar avatar-sm">SP</div><div><h6 style="margin:0;font-size:0.875rem;">Sneha Patel</h6><small class="text-muted">Last visit: Jul 4</small></div></div>
+                <div class="notification-item"><div class="avatar avatar-sm">VJ</div><div><h6 style="margin:0;font-size:0.875rem;">Vikram Joshi</h6><small class="text-muted">Last visit: Jul 2</small></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header"><h5>Patient Feedback</h5></div>
+              <div class="card-body">
+                <div class="mb-3 pb-3 border-bottom">
+                  <div class="d-flex justify-content-between mb-1"><strong style="font-size:0.875rem;">Ananya K.</strong><span class="rating-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></div>
+                  <p style="font-size:0.8rem;color:var(--gray-600);margin:0;">"Dr. Priya is incredibly empathetic and helped me manage my anxiety effectively."</p>
+                </div>
+                <div class="mb-3 pb-3 border-bottom">
+                  <div class="d-flex justify-content-between mb-1"><strong style="font-size:0.875rem;">Rahul M.</strong><span class="rating-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span></div>
+                  <p style="font-size:0.8rem;color:var(--gray-600);margin:0;">"Great session! Very professional and understanding approach."</p>
+                </div>
+                <div>
+                  <div class="d-flex justify-content-between mb-1"><strong style="font-size:0.875rem;">Sneha P.</strong><span class="rating-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></div>
+                  <p style="font-size:0.8rem;color:var(--gray-600);margin:0;">"The video consultation was smooth and the advice was very helpful."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-header"><h5>Notifications</h5><a href="notifications.html">View All</a></div>
+              <div class="card-body p-0">
+                <div class="notification-item unread"><div class="notification-icon appointment"><i class="fas fa-calendar"></i></div><div><h6 style="margin:0;font-size:0.85rem;">New appointment request</h6><p style="margin:0;font-size:0.75rem;color:var(--gray-500);">Neha Desai requested a session at 4:00 PM</p><small class="text-muted">10 min ago</small></div></div>
+                <div class="notification-item unread"><div class="notification-icon message"><i class="fas fa-comment"></i></div><div><h6 style="margin:0;font-size:0.85rem;">Patient message</h6><p style="margin:0;font-size:0.75rem;color:var(--gray-500);">Rahul Mehta sent a follow-up question</p><small class="text-muted">25 min ago</small></div></div>
+                <div class="notification-item"><div class="notification-icon payment"><i class="fas fa-rupee-sign"></i></div><div><h6 style="margin:0;font-size:0.85rem;">Payment received</h6><p style="margin:0;font-size:0.75rem;color:var(--gray-500);">₹1,500 for session with Ananya K.</p><small class="text-muted">1 hour ago</small></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Revenue Overview -->
+        <div class="row g-4 mt-2">
+          <div class="col-12">
+            <div class="card"><div class="card-header"><h5>Revenue Overview (June 2026)</h5></div><div class="card-body"><div class="chart-container" style="height:320px;"><canvas id="revenueOverviewChart"></canvas></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="../js/layout.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/charts.js"></script>
+</body>
+</html>

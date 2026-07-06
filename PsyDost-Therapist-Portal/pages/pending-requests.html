@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pending Requests - PsyDost</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+</head>
+<body data-page="pending-requests.html">
+  <div class="sidebar-overlay" style="position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:1035;opacity:0;pointer-events:none;transition:opacity .3s;"></div>
+  <div class="app-wrapper">
+    <div id="app-sidebar"></div>
+    <div class="main-content">
+      <div id="app-header"></div>
+      <div class="page-content">
+        <div class="breadcrumb-nav"> <a href="dashboard.html">Home</a> <i class="fas fa-chevron-right" style="font-size:0.6rem;"></i> <a href="appointments-list.html">Appointments</a> <i class="fas fa-chevron-right" style="font-size:0.6rem;"></i> <span class="current">Pending Requests</span> </div>
+        <div class="page-header"><div><h2>Pending Requests</h2><p>5 appointment requests awaiting your response</p></div><a href="appointments-list.html" class="btn-outline-custom"><i class="fas fa-arrow-left"></i> All Appointments</a></div>
+        <div class="card"><div class="card-body p-0"><table class="table-custom"><thead><tr><th>Requested Slot</th><th>Patient</th><th>Session</th><th>Requested</th><th>Actions</th></tr></thead><tbody><tr><td><strong>Jul 6, 04:00 PM</strong></td><td><div class="patient-cell"><img src="https://ui-avatars.com/api/?name=Neha+Desai&size=32&background=ef4444&color=fff" class="avatar avatar-sm" alt=""><div class="info"><h6>Neha Desai</h6><small>Relationship Issues</small></div></div></td><td>Video Call · 60 min</td><td>Requested 10 min ago</td><td><div class="d-flex gap-2"><button class="btn-success-custom btn-sm-custom" onclick="PsyDost.showToast('Request accepted','success')"><i class="fas fa-check"></i> Accept</button><button class="btn-danger-custom btn-sm-custom" onclick="PsyDost.showToast('Request declined','warning')"><i class="fas fa-times"></i> Decline</button></div></td></tr><tr><td><strong>Jul 7, 02:00 PM</strong></td><td><div class="patient-cell"><img src="https://ui-avatars.com/api/?name=Arjun+Singh&size=32&background=06b6d4&color=fff" class="avatar avatar-sm" alt=""><div class="info"><h6>Arjun Singh</h6><small>ADHD</small></div></div></td><td>Follow-up · 45 min</td><td>Requested 2 hrs ago</td><td><div class="d-flex gap-2"><button class="btn-success-custom btn-sm-custom" onclick="PsyDost.showToast('Request accepted','success')"><i class="fas fa-check"></i> Accept</button><button class="btn-danger-custom btn-sm-custom" onclick="PsyDost.showToast('Request declined','warning')"><i class="fas fa-times"></i> Decline</button></div></td></tr><tr><td><strong>Jul 8, 11:30 AM</strong></td><td><div class="patient-cell"><img src="https://ui-avatars.com/api/?name=Kavita+Rao&size=32&background=64748b&color=fff" class="avatar avatar-sm" alt=""><div class="info"><h6>Kavita Rao</h6><small>OCD</small></div></div></td><td>Video Call · 60 min</td><td>Requested yesterday</td><td><div class="d-flex gap-2"><button class="btn-success-custom btn-sm-custom" onclick="PsyDost.showToast('Request accepted','success')"><i class="fas fa-check"></i> Accept</button><button class="btn-danger-custom btn-sm-custom" onclick="PsyDost.showToast('Request declined','warning')"><i class="fas fa-times"></i> Decline</button></div></td></tr></tbody></table></div></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="../js/layout.js"></script>
+  <script src="../js/main.js"></script>
+  
+</body>
+</html>

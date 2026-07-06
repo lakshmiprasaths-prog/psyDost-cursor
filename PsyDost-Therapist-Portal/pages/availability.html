@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Availability - PsyDost</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+</head>
+<body data-page="availability.html">
+  <div class="sidebar-overlay" style="position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:1035;opacity:0;pointer-events:none;transition:opacity .3s;"></div>
+  <div class="app-wrapper">
+    <div id="app-sidebar"></div>
+    <div class="main-content">
+      <div id="app-header"></div>
+      <div class="page-content">
+        <div class="breadcrumb-nav"> <a href="dashboard.html">Home</a> <i class="fas fa-chevron-right" style="font-size:0.6rem;"></i> <span class="current">Availability</span> </div>
+        <div class="page-header"><div><h2>Manage Availability</h2><p>Set working hours, breaks, and holidays</p></div>
+        <button class="btn-primary-custom" onclick="PsyDost.showToast('Availability saved','success')"><i class="fas fa-save"></i> Save Changes</button></div>
+        <div class="row g-4"><div class="col-lg-8">
+          <div class="card mb-4"><div class="card-header"><h5><i class="fas fa-clock text-primary"></i> Working Hours</h5></div><div class="card-body p-0"><table class="table-custom"><thead><tr><th>Day</th><th>Start</th><th>End</th><th>Break</th><th>Status</th></tr></thead><tbody>
+          <tr><td><strong>Monday</strong></td><td><input type="time" class="form-control-custom" value="09:00" style="width:auto;"></td><td><input type="time" class="form-control-custom" value="18:00" style="width:auto;"></td><td>1:00 PM - 2:00 PM</td><td><span class="badge-status active">Active</span></td></tr>
+          <tr><td><strong>Tuesday</strong></td><td><input type="time" class="form-control-custom" value="09:00" style="width:auto;"></td><td><input type="time" class="form-control-custom" value="18:00" style="width:auto;"></td><td>1:00 PM - 2:00 PM</td><td><span class="badge-status active">Active</span></td></tr>
+          <tr><td><strong>Wednesday</strong></td><td><input type="time" class="form-control-custom" value="09:00" style="width:auto;"></td><td><input type="time" class="form-control-custom" value="18:00" style="width:auto;"></td><td>1:00 PM - 2:00 PM</td><td><span class="badge-status active">Active</span></td></tr>
+          <tr><td><strong>Thursday</strong></td><td><input type="time" class="form-control-custom" value="09:00" style="width:auto;"></td><td><input type="time" class="form-control-custom" value="18:00" style="width:auto;"></td><td>1:00 PM - 2:00 PM</td><td><span class="badge-status active">Active</span></td></tr>
+          <tr><td><strong>Friday</strong></td><td><input type="time" class="form-control-custom" value="09:00" style="width:auto;"></td><td><input type="time" class="form-control-custom" value="18:00" style="width:auto;"></td><td>1:00 PM - 2:00 PM</td><td><span class="badge-status active">Active</span></td></tr>
+          <tr><td><strong>Saturday</strong></td><td><input type="time" class="form-control-custom" value="10:00" style="width:auto;"></td><td><input type="time" class="form-control-custom" value="14:00" style="width:auto;"></td><td>—</td><td><span class="badge-status active">Active</span></td></tr>
+          <tr><td><strong>Sunday</strong></td><td colspan="3" class="text-muted">Day Off</td><td><span class="badge-status cancelled">Closed</span></td></tr>
+          </tbody></table></div></div>
+          <div class="card"><div class="card-header"><h5><i class="fas fa-umbrella-beach text-warning"></i> Holidays & Time Off</h5><button class="btn-outline-custom btn-sm-custom" onclick="PsyDost.showToast('Holiday added','success')"><i class="fas fa-plus"></i> Add</button></div><div class="card-body p-0"><table class="table-custom"><thead><tr><th>Date</th><th>Reason</th><th>Action</th></tr></thead><tbody>
+          <tr><td>Aug 15, 2026</td><td>Independence Day</td><td><button class="btn-outline-custom btn-sm-custom" onclick="PsyDost.showToast('Holiday removed','info')"><i class="fas fa-trash"></i></button></td></tr>
+          <tr><td>Aug 26, 2026</td><td>Personal Leave</td><td><button class="btn-outline-custom btn-sm-custom" onclick="PsyDost.showToast('Holiday removed','info')"><i class="fas fa-trash"></i></button></td></tr>
+          <tr><td>Oct 2, 2026</td><td>Gandhi Jayanti</td><td><button class="btn-outline-custom btn-sm-custom" onclick="PsyDost.showToast('Holiday removed','info')"><i class="fas fa-trash"></i></button></td></tr>
+          </tbody></table></div></div>
+        </div><div class="col-lg-4"><div class="card mb-4"><div class="card-header"><h5>Session Settings</h5></div><div class="card-body">
+          <div class="mb-3"><label class="form-label-custom">Default Session Duration</label><select class="form-control-custom"><option>45 minutes</option><option selected>60 minutes</option><option>75 minutes</option></select></div>
+          <div class="mb-3"><label class="form-label-custom">Buffer Between Sessions</label><select class="form-control-custom"><option>10 minutes</option><option selected>15 minutes</option><option>30 minutes</option></select></div>
+          <div class="mb-3"><label class="form-label-custom">Max Daily Appointments</label><input type="number" class="form-control-custom" value="8"></div>
+        </div></div><div class="card"><div class="card-header"><h5>Quick Links</h5></div><div class="card-body d-flex flex-column gap-2">
+          <a href="appointments-calendar.html" class="btn-outline-custom w-100 justify-content-center"><i class="fas fa-calendar"></i> View Calendar</a>
+          <a href="appointments-list.html" class="btn-outline-custom w-100 justify-content-center"><i class="fas fa-list"></i> All Appointments</a>
+        </div></div></div></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="../js/layout.js"></script>
+  <script src="../js/main.js"></script>
+  
+</body>
+</html>

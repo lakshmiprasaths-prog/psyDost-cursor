@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultation Details - PsyDost</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+</head>
+<body data-page="consultation-details.html">
+  <div class="sidebar-overlay" style="position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:1035;opacity:0;pointer-events:none;transition:opacity .3s;"></div>
+  <div class="app-wrapper">
+    <div id="app-sidebar"></div>
+    <div class="main-content">
+      <div id="app-header"></div>
+      <div class="page-content">
+        <div class="breadcrumb-nav"> <a href="dashboard.html">Home</a> <i class="fas fa-chevron-right" style="font-size:0.6rem;"></i> <a href="consultation-history.html">Consultations</a> <i class="fas fa-chevron-right" style="font-size:0.6rem;"></i> <span class="current">Details</span> </div>
+        <div class="page-header"><div><h2>Consultation Details</h2><p>Jul 6, 2026 · Ananya Krishnan · Session #12</p></div>
+        <div class="d-flex gap-2"><a href="patient-profile.html" class="btn-outline-custom"><i class="fas fa-user"></i> Patient</a><button class="btn-outline-custom" onclick="PsyDost.showToast('Report downloaded','success')"><i class="fas fa-download"></i> Download</button></div></div>
+        <div class="row g-4"><div class="col-lg-8">
+          <div class="card mb-4"><div class="card-header"><h5>Session Overview</h5><span class="badge-status completed">Completed</span></div><div class="card-body"><div class="info-grid">
+            <div class="info-item"><label>Date & Time</label><span>Jul 6, 2026 · 09:00 AM</span></div><div class="info-item"><label>Duration</label><span>45 minutes</span></div>
+            <div class="info-item"><label>Type</label><span>Video Consultation</span></div><div class="info-item"><label>Fee</label><span>₹1,500</span></div>
+          </div></div></div>
+          <div class="card mb-4"><div class="card-header"><h5>Diagnosis</h5></div><div class="card-body"><p><strong>Primary:</strong> Generalized Anxiety Disorder (F41.1)</p><p class="mb-0"><strong>Secondary:</strong> Mild Depressive Symptoms (under monitoring)</p></div></div>
+          <div class="card mb-4"><div class="card-header"><h5>Session Notes</h5></div><div class="card-body"><p>Patient reported reduced anxiety frequency this week. Successfully applied grounding techniques during a work presentation. PHQ-9 score improved to 8. Discussed sleep hygiene and caffeine reduction.</p></div></div>
+          <div class="card"><div class="card-header"><h5>Treatment Plan</h5></div><div class="card-body"><ul style="margin:0;padding-left:1.25rem;"><li>Continue weekly CBT sessions</li><li>Daily 10-minute mindfulness practice</li><li>Reduce caffeine to max 1 cup/day</li><li>Follow-up PHQ-9 assessment in 2 weeks</li><li>Coordinate with psychiatrist for medication review</li></ul></div></div>
+        </div><div class="col-lg-4">
+          <div class="card mb-4"><div class="card-header"><h5>Patient</h5></div><div class="card-body text-center"><img src="https://ui-avatars.com/api/?name=Ananya+Krishnan&size=64&background=f59e0b&color=fff" class="avatar-lg mb-2" alt=""><h6>Ananya Krishnan</h6><p class="text-muted">Anxiety Disorder</p><a href="patient-profile.html" class="btn-outline-custom btn-sm-custom">View Profile</a></div></div>
+          <div class="card mb-4"><div class="card-header"><h5>Prescriptions</h5><a href="prescriptions.html">Manage</a></div><div class="card-body"><p><strong>Sertraline 50mg</strong></p><p class="text-muted mb-0" style="font-size:0.875rem;">Once daily · 30 days · Prescribed by psychiatrist, monitored in sessions</p></div></div>
+          <div class="card"><div class="card-header"><h5>Patient Rating</h5></div><div class="card-body text-center"><div class="rating-stars mb-2" style="font-size:1.5rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="text-muted mb-0">"Very helpful session, feeling more confident"</p></div></div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="../js/layout.js"></script>
+  <script src="../js/main.js"></script>
+  
+</body>
+</html>

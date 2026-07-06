@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today's Appointments - PsyDost</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+</head>
+<body data-page="appointments-today.html">
+  <div class="sidebar-overlay" style="position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:1035;opacity:0;pointer-events:none;transition:opacity .3s;"></div>
+  <div class="app-wrapper">
+    <div id="app-sidebar"></div>
+    <div class="main-content">
+      <div id="app-header"></div>
+      <div class="page-content">
+        <div class="breadcrumb-nav"> <a href="dashboard.html">Home</a> <i class="fas fa-chevron-right" style="font-size:0.6rem;"></i> <a href="appointments-list.html">Appointments</a> <i class="fas fa-chevron-right" style="font-size:0.6rem;"></i> <span class="current">Today</span> </div>
+        <div class="page-header"><div><h2>Today's Appointments</h2><p>Monday, July 6, 2026 · 5 sessions scheduled</p></div>
+        <div class="d-flex gap-2"><a href="appointments-calendar.html" class="btn-outline-custom"><i class="fas fa-calendar"></i> Calendar</a><a href="consultation-waiting.html" class="btn-primary-custom"><i class="fas fa-video"></i> Next Session</a></div></div>
+        <div class="kpi-grid mb-4"><div class="kpi-card"><div class="kpi-icon blue"><i class="fas fa-calendar-day"></i></div><h3>5</h3><p>Total Today</p></div><div class="kpi-card"><div class="kpi-icon green"><i class="fas fa-check"></i></div><h3>1</h3><p>Completed</p></div><div class="kpi-card"><div class="kpi-icon purple"><i class="fas fa-video"></i></div><h3>1</h3><p>In Progress</p></div><div class="kpi-card"><div class="kpi-icon orange"><i class="fas fa-hourglass-half"></i></div><h3>1</h3><p>Pending</p></div></div>
+        <div class="card"><div class="card-body p-0"><table class="table-custom"><thead><tr><th>Time</th><th>Patient</th><th>Type</th><th>Status</th><th>Action</th></tr></thead><tbody><tr><td><strong>09:00 AM</strong></td><td><div class="patient-cell"><img src="https://ui-avatars.com/api/?name=Ananya+Krishnan&size=32&background=f59e0b&color=fff" class="avatar avatar-sm" alt=""><div class="info"><h6>Ananya Krishnan</h6><small>Anxiety</small></div></div></td><td>Video Call</td><td><span class="badge-status completed">Completed</span></td><td><a href="consultation-details.html" class="btn-outline-custom btn-sm-custom">View</a></td></tr><tr><td><strong>10:30 AM</strong></td><td><div class="patient-cell"><img src="https://ui-avatars.com/api/?name=Rahul+Mehta&size=32&background=2563eb&color=fff" class="avatar avatar-sm" alt=""><div class="info"><h6>Rahul Mehta</h6><small>Depression</small></div></div></td><td>Video Call</td><td><span class="badge-status in-progress">In Progress</span></td><td><a href="consultation-live.html" class="btn-primary-custom btn-sm-custom"><i class="fas fa-video"></i> Join</a></td></tr><tr><td><strong>12:00 PM</strong></td><td><div class="patient-cell"><img src="https://ui-avatars.com/api/?name=Sneha+Patel&size=32&background=7c3aed&color=fff" class="avatar avatar-sm" alt=""><div class="info"><h6>Sneha Patel</h6><small>Stress</small></div></div></td><td>Video Call</td><td><span class="badge-status confirmed">Confirmed</span></td><td><a href="consultation-waiting.html" class="btn-outline-custom btn-sm-custom">Waiting Room</a></td></tr><tr><td><strong>02:30 PM</strong></td><td><div class="patient-cell"><img src="https://ui-avatars.com/api/?name=Vikram+Joshi&size=32&background=10b981&color=fff" class="avatar avatar-sm" alt=""><div class="info"><h6>Vikram Joshi</h6><small>PTSD</small></div></div></td><td>Follow-up</td><td><span class="badge-status confirmed">Confirmed</span></td><td><a href="appointment-details.html" class="btn-outline-custom btn-sm-custom">Details</a></td></tr><tr><td><strong>04:00 PM</strong></td><td><div class="patient-cell"><img src="https://ui-avatars.com/api/?name=Neha+Desai&size=32&background=ef4444&color=fff" class="avatar avatar-sm" alt=""><div class="info"><h6>Neha Desai</h6><small>Relationships</small></div></div></td><td>Video Call</td><td><span class="badge-status pending">Pending</span></td><td><a href="pending-requests.html" class="btn-warning-custom btn-sm-custom">Review</a></td></tr></tbody></table></div></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="../js/layout.js"></script>
+  <script src="../js/main.js"></script>
+  
+</body>
+</html>

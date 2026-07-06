@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session Complete - PsyDost</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+</head>
+<body data-page="consultation-completed.html">
+  <div class="sidebar-overlay" style="position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:1035;opacity:0;pointer-events:none;transition:opacity .3s;"></div>
+  <div class="app-wrapper">
+    <div id="app-sidebar"></div>
+    <div class="main-content">
+      <div id="app-header"></div>
+      <div class="page-content">
+        <div class="breadcrumb-nav"> <a href="dashboard.html">Home</a> <i class="fas fa-chevron-right" style="font-size:0.6rem;"></i> <a href="consultation-history.html">Consultations</a> <i class="fas fa-chevron-right" style="font-size:0.6rem;"></i> <span class="current">Session Complete</span> </div>
+        <div class="card"><div class="card-body text-center py-5">
+          <div style="width:80px;height:80px;background:#d1fae5;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;"><i class="fas fa-check" style="font-size:2rem;color:var(--success);"></i></div>
+          <h2>Session Completed Successfully</h2>
+          <p class="text-muted mb-4">Consultation with <strong>Rahul Mehta</strong> · Duration: 47 minutes · Jul 6, 2026</p>
+          <div class="row g-4 text-start mb-4" style="max-width:700px;margin:0 auto;">
+            <div class="col-md-6"><div class="card"><div class="card-body"><label class="form-label-custom">Diagnosis / Focus</label><input class="form-control-custom" value="Major Depressive Disorder — CBT Session"></div></div></div>
+            <div class="col-md-6"><div class="card"><div class="card-body"><label class="form-label-custom">Session Fee</label><input class="form-control-custom" value="₹1,275 (85% = ₹1,084)" readonly></div></div></div>
+            <div class="col-12"><div class="card"><div class="card-body"><label class="form-label-custom">Session Summary</label><textarea class="form-control-custom" rows="4">Patient demonstrated progress with breathing techniques. Reduced anxiety during work meetings. Assigned daily mindfulness homework for 10 minutes.</textarea></div></div></div>
+            <div class="col-12"><div class="card"><div class="card-body"><label class="form-label-custom">Treatment Plan Updates</label><textarea class="form-control-custom" rows="3">Continue CBT approach. Next session: review mindfulness journal. Consider referral to psychiatrist if no improvement in 4 weeks.</textarea></div></div></div>
+          </div>
+          <div class="d-flex gap-2 justify-content-center flex-wrap">
+            <button class="btn-primary-custom" onclick="PsyDost.showToast('Summary saved','success')"><i class="fas fa-save"></i> Save & Close</button>
+            <a href="prescriptions.html" class="btn-outline-custom"><i class="fas fa-prescription"></i> Add Prescription</a>
+            <a href="consultation-details.html" class="btn-outline-custom"><i class="fas fa-file-alt"></i> View Details</a>
+            <a href="dashboard.html" class="btn-outline-custom"><i class="fas fa-home"></i> Dashboard</a>
+          </div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="../js/layout.js"></script>
+  <script src="../js/main.js"></script>
+  
+</body>
+</html>
